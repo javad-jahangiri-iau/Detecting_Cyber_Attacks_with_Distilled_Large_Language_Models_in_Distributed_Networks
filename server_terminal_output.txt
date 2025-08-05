@@ -1,0 +1,36 @@
+C:\Users\jahangiri\PycharmProjects\tabriz\.venv\Scripts\python.exe C:\Users\jahangiri\PycharmProjects\tabriz\server.py
+[SERVER] Starting server at 2025-08-05 12:57:37.824022
+[SERVER] Listening on port 12345 for model upload at 2025-08-05 12:57:37.827020
+[RECV] Connected to client 0: ('127.0.0.1', 52791) at 2025-08-05 13:00:12.021176
+[SERVER] Starting to receive chunked data at 2025-08-05 13:00:12.021176
+[RECV] Connected to client 1: ('127.0.0.1', 52792) at 2025-08-05 13:00:21.434124
+[SERVER] Starting to receive chunked data at 2025-08-05 13:00:21.434124
+Receiving data: 100%|██████████| 245M/245M [00:02<00:00, 104MB/s]
+[SERVER] Finished receiving chunked data at 2025-08-05 13:00:25.427771
+[RECV] Client 0 model received at 2025-08-05 13:00:27.176564
+Receiving data: 100%|██████████| 245M/245M [00:02<00:00, 102MB/s]
+[SERVER] Finished receiving chunked data at 2025-08-05 13:00:34.971978
+[RECV] Client 1 model received at 2025-08-05 13:00:36.815381
+[SERVER] Starting model aggregation at 2025-08-05 13:00:36.823379
+[SERVER] Aggregated model saved to ddos_distilbert_model.pth at 2025-08-05 13:00:37.183474
+[SERVER] Sending model on port 12346 at 2025-08-05 13:00:48.390784
+[SEND] Sending to client 0: ('127.0.0.1', 52812) at 2025-08-05 13:00:48.654065
+[SERVER] Starting to send chunked data at 2025-08-05 13:00:48.654065
+[ERROR] Sending to client 0: [WinError 10053] An established connection was aborted by the software in your host machine at 2025-08-05 13:00:48.654065
+[SERVER] Retrying to send to remaining clients, attempts left: 4 at 2025-08-05 13:00:48.654065
+[SEND] Sending to client 0: ('127.0.0.1', 52816) at 2025-08-05 13:00:48.655067
+[SERVER] Starting to send chunked data at 2025-08-05 13:00:48.655067
+[SERVER] Finished sending chunked data at 2025-08-05 13:00:50.804516
+[SEND] Client 0 confirmed receipt at 2025-08-05 13:00:50.804516
+[SEND] Sending to client 1: ('127.0.0.1', 52815) at 2025-08-05 13:00:50.804516
+[SERVER] Starting to send chunked data at 2025-08-05 13:00:50.804516
+[ERROR] Sending to client 1: [WinError 10053] An established connection was aborted by the software in your host machine at 2025-08-05 13:00:50.805465
+[SERVER] Retrying to send to remaining clients, attempts left: 3 at 2025-08-05 13:00:50.805465
+[SEND] Sending to client 1: ('127.0.0.1', 52817) at 2025-08-05 13:00:50.805465
+[SERVER] Starting to send chunked data at 2025-08-05 13:00:50.805465
+[SERVER] Finished sending chunked data at 2025-08-05 13:00:53.323857
+[SEND] Client 1 confirmed receipt at 2025-08-05 13:00:53.323857
+[SERVER] Finished sending aggregated model to 2 clients at 2025-08-05 13:00:53.323857
+[SERVER] Server shutdown at 2025-08-05 13:00:53.332855
+
+Process finished with exit code 0

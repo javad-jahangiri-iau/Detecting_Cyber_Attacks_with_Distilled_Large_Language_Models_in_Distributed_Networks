@@ -1,0 +1,69 @@
+C:\Users\jahangiri\PycharmProjects\tabriz\.venv\Scripts\python.exe C:\Users\jahangiri\PycharmProjects\tabriz\client2.py
+[CLIENT 2] Starting client at 2025-08-05 12:42:39.131455
+[CLIENT 2] Starting data preprocessing at 2025-08-05 12:42:39.145453
+[CLIENT 2] Finished data preprocessing at 2025-08-05 12:42:40.300224
+[CLIENT 2] Starting model training at 2025-08-05 12:42:40.585804
+Client 2 Epoch 1/3: 100%|██████████| 847/847 [05:37<00:00,  2.51batch/s, loss=0.000147]
+Client 2 Epoch 2/3:   0%|          | 0/847 [00:00<?, ?batch/s]Client 2 Epoch [1/3], Average Loss: 0.0491
+Client 2 Epoch 2/3: 100%|██████████| 847/847 [05:38<00:00,  2.51batch/s, loss=0.000432]
+Client 2 Epoch 3/3:   0%|          | 0/847 [00:00<?, ?batch/s]Client 2 Epoch [2/3], Average Loss: 0.0058
+Client 2 Epoch 3/3: 100%|██████████| 847/847 [05:35<00:00,  2.52batch/s, loss=8.02e-5]
+Client 2 Epoch [3/3], Average Loss: 0.0043
+[CLIENT 2] Finished model training at 2025-08-05 12:59:32.031179
+Client 2 evaluating local model on validation set...
+[CLIENT 2] Starting model evaluation at 2025-08-05 12:59:32.031179
+Client 2 Evaluating: 100%|██████████| 283/283 [00:28<00:00,  9.78batch/s]
+Client 2 Evaluating:   0%|          | 0/283 [00:00<?, ?batch/s]
+Client 2 Test Accuracy: 99.09%, Test Loss: 0.0245, Precision: 0.9843, Recall: 1.0000, F1-Score: 0.9921
+[CLIENT 2] Finished model evaluation at 2025-08-05 13:00:00.968104
+Client 2 evaluating local model on test set...
+[CLIENT 2] Starting model evaluation at 2025-08-05 13:00:00.968104
+Client 2 Evaluating: 100%|██████████| 283/283 [00:20<00:00, 14.00batch/s]
+Client 2 Test Accuracy: 99.05%, Test Loss: 0.0256, Precision: 0.9836, Recall: 1.0000, F1-Score: 0.9917
+[CLIENT 2] Finished model evaluation at 2025-08-05 13:00:21.189161
+[CLIENT 2] Starting to save metrics at 2025-08-05 13:00:21.189161
+Client 2 metrics saved to client2_local_metrics.csv at 2025-08-05 13:00:21.191162
+Client 2 model saved to client2_model.pth at 2025-08-05 13:00:21.429121
+[CLIENT 2] Starting to send model to server at 2025-08-05 13:00:21.429121
+Client 2 connected to server at localhost:12345 at 2025-08-05 13:00:21.433121
+[CLIENT 2] Starting data compression at 2025-08-05 13:00:21.434124
+[CLIENT 2] Finished data compression at 2025-08-05 13:00:32.562082
+[CLIENT 2] Starting to send chunked data at 2025-08-05 13:00:32.562082
+[CLIENT 2] Finished sending chunked data at 2025-08-05 13:00:34.971978
+Client 2 sent model weights to server at 2025-08-05 13:00:34.971978
+[CLIENT 2] Finished sending model to server at 2025-08-05 13:00:34.971978
+[CLIENT 2] Starting to receive aggregated model at 2025-08-05 13:00:34.979978
+[CLIENT 2] Starting to wait for server at localhost:12346 at 2025-08-05 13:00:34.979978
+Receiving data:   0%|          | 0.00/244M [00:00<?, ?B/s]
+[CLIENT 2] Server ready at localhost:12346 at 2025-08-05 13:00:48.654065
+Client 2 receiving aggregated model from localhost:12346 at 2025-08-05 13:00:48.654065
+[CLIENT 2] Starting to receive chunked data at 2025-08-05 13:00:48.655067
+Receiving data: 100%|██████████| 244M/244M [00:02<00:00, 114MB/s]
+[CLIENT 2] Finished receiving chunked data at 2025-08-05 13:00:50.804516
+[CLIENT 2] Starting data decompression at 2025-08-05 13:00:50.804516
+[CLIENT 2] Finished data decompression at 2025-08-05 13:00:52.842964
+Client 2 received aggregated model at 2025-08-05 13:00:52.843967
+Client 2 Evaluating:   0%|          | 0/283 [00:00<?, ?batch/s]
+Client 2 updated with aggregated model at 2025-08-05 13:00:52.859920
+Client 2 evaluating aggregated model on validation set...
+[CLIENT 2] Starting model evaluation at 2025-08-05 13:00:52.859920
+Client 2 Evaluating: 100%|██████████| 283/283 [00:27<00:00, 10.34batch/s]
+Client 2 Evaluating:   0%|          | 0/283 [00:00<?, ?batch/s]
+Client 2 Test Accuracy: 99.98%, Test Loss: 0.0010, Precision: 1.0000, Recall: 0.9996, F1-Score: 0.9998
+[CLIENT 2] Finished model evaluation at 2025-08-05 13:01:20.223723
+Client 2 evaluating aggregated model on test set...
+[CLIENT 2] Starting model evaluation at 2025-08-05 13:01:20.223723
+Client 2 Evaluating: 100%|██████████| 283/283 [00:29<00:00,  9.53batch/s]
+Client 2 Accuracy: 99.87%, Test Loss: 0.0058, Precision: 0.9988, Recall: 0.9988, F1-Score: 0.9988
+[CLIENT 2] Finished model evaluation at 2025-08-05 13:01:49.929474
+[CLIENT 2] Starting to save metrics at 2025-08-05 13:01:49.929474
+Client 2 metrics saved to client2_aggregated_metrics.csv at 2025-08-05 13:01:49.930524
+[CLIENT 2] Starting plot generation at 2025-08-05 13:01:49.930524
+Client 2 local_confusion_matrix.png saved to client2_plots at 2025-08-05 13:01:50.066001
+Client 2 aggregated_confusion_matrix.png saved to client2_plots at 2025-08-05 13:01:50.516086
+Client 2 metrics_comparison.png saved to client2_plots at 2025-08-05 13:01:51.038362
+[CLIENT 2] Finished plot generation at 2025-08-05 13:01:51.038362
+Client 2 updated model saved to client2_model.pth at 2025-08-05 13:01:51.450604
+[CLIENT 2] Client shutdown at 2025-08-05 13:01:51.450604
+
+Process finished with exit code 0
